@@ -1,25 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        ink: '#0a0a0a',
-        charcoal: '#121212',
-        panel: 'rgba(18,18,18,0.72)',
-        accent: '#ff8a3d',
-        electric: '#4da3ff'
+        ink: '#070806',
+        charcoal: '#11120f',
+        ash: '#1b1c18',
+        bone: '#f4f1e8',
+        gold: '#d6b866',
+        moss: '#7da568',
+        sage: '#a9b78f'
       },
       boxShadow: {
-        glow: '0 0 40px rgba(255, 138, 61, 0.22)',
-        glowBlue: '0 0 40px rgba(77, 163, 255, 0.22)'
+        glow: '0 24px 80px rgba(214, 184, 102, 0.20)',
+        moss: '0 24px 80px rgba(125, 165, 104, 0.20)'
       },
       fontFamily: {
-        sans: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui'],
-        display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui']
-      },
-      backgroundImage: {
-        'mesh-dark': 'radial-gradient(circle at top, rgba(255,138,61,0.18), transparent 34%), radial-gradient(circle at 80% 20%, rgba(77,163,255,0.14), transparent 22%), linear-gradient(180deg, #0a0a0a 0%, #121212 48%, #0a0a0a 100%)'
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui'],
+        display: ['var(--font-poppins)', 'ui-sans-serif', 'system-ui'],
+        accent: ['var(--font-bebas)', 'ui-sans-serif', 'system-ui']
       }
     }
   },
