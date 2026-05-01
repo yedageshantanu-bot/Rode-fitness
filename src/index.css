@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui;
+  background: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0a0a0a;
+  color: #f5f5f5;
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 138, 61, 0.08), transparent 24%),
+    radial-gradient(circle at 80% 0%, rgba(77, 163, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 18%);
+  z-index: -1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(255, 138, 61, 0.35);
+  color: white;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl;
+}
+
+.soft-glow {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03), 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.heading-shadow {
+  text-shadow: 0 16px 50px rgba(0, 0, 0, 0.5);
+}
