@@ -1,11 +1,4 @@
-'use client';
-
-import dynamic from 'next/dynamic';
-
-const HomeClient = dynamic(() => import('../components/HomeClient'), {
-  ssr: false,
-  loading: () => <div className="min-h-screen bg-ink" />
-});
+import HomeClient from '../components/HomeClient';
 
 export default function Page() {
   return <HomeClient />;

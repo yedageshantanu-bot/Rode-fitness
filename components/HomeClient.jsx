@@ -76,16 +76,29 @@ const trainers = [
 ];
 
 const testimonials = [
-  ['Lost 5kg in three months and finally learned how to train without confusion.', 'Priya K.'],
-  ['The trainers correct form properly. It feels premium, serious, and friendly.', 'Amit S.'],
-  ['Ladies batch made me comfortable from day one. Clean setup and great energy.', 'Rutuja M.'],
-  ['Best part is the guidance. You do not feel lost after joining.', 'Sameer P.']
+  ['Best gym in Nashik for serious training. Rode Fitness Center helped me lose weight with proper guidance.', 'Priya K.'],
+  ['Rode Fitness Center Nashik has trainers who correct form properly. It feels premium, serious, and friendly.', 'Amit S.'],
+  ['The ladies batch at this Govind Nagar gym made me comfortable from day one. Clean setup and great energy.', 'Rutuja M.'],
+  ['Best gym in Govind Nagar Nashik if you want guidance and do not want to feel lost after joining.', 'Sameer P.']
 ];
 
 const plans = [
   ['Starter', '3 Months', 'Basic gym access with workout guidance.', '₹4,999'],
   ['Transformation', '3 Months', 'Goal-based program, check-ins, and diet direction.', '₹7,999', true],
   ['Elite Coaching', '3 Months', 'Personal attention, advanced tracking, and recovery plan.', '₹11,999']
+];
+
+const blogPosts = [
+  {
+    title: 'Best Gym in Nashik for Weight Loss',
+    href: '/blog/best-gym-in-nashik-for-weight-loss',
+    text: 'A local guide to choosing a weight loss gym in Nashik with coaching, consistency, and measurable progress.'
+  },
+  {
+    title: 'Top Fitness Center in Govind Nagar Nashik',
+    href: '/blog/top-fitness-center-in-govind-nagar-nashik',
+    text: 'Why Rode Fitness Center Nashik is a strong option for gym training near Govind Nagar.'
+  }
 ];
 
 const fadeUp = {
@@ -161,7 +174,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3" aria-label="Rode Fitness Center home">
           <span className="relative h-12 w-12 overflow-hidden rounded-full border border-gold/30 bg-white">
-            <Image src="/logo.png" alt="Rode Fitness Center logo" fill sizes="48px" className="object-contain p-1" priority />
+            <Image src="/logo.png" alt="Rode Fitness Center Nashik gym logo" fill sizes="48px" className="object-contain p-1" priority />
           </span>
           <span>
             <span className="block font-display text-sm font-extrabold tracking-[0.22em] text-white">RODE FITNESS</span>
@@ -218,7 +231,7 @@ export default function Home() {
       <Navbar />
 
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-8">
-        <Image src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2200&q=90" alt="Premium gym training floor" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/gym-nashik.jpg" alt="Rode Fitness Center Nashik Gym Interior" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/78 to-black/26" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-black/30" />
 
@@ -226,12 +239,14 @@ export default function Home() {
           <motion.div variants={fadeUp} initial="hidden" animate="visible" className="max-w-3xl">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold/25 bg-gold/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-gold">
               <ShieldCheck size={14} />
-              Premium 90-Day Transformation
+              Rode Fitness Center Nashik
             </p>
             <h1 className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-white text-balance sm:text-7xl lg:text-8xl">
-              Transform Your Body in 90 Days
+              Best Gym in Nashik - Rode Fitness Center
             </h1>
-            <p className="mt-6 max-w-xl text-lg font-medium leading-8 text-white/76">Professional Training. Real Results.</p>
+            <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-white/76">
+              Rode Fitness Center Nashik is a premium gym in Govind Nagar Nashik for weight loss, muscle gain, bodybuilding, Zumba, CrossFit, and personal training. If you are searching for the best gym in Nashik or Rode Fitness Centre near Govind Nagar, our trainers help you build real results with a clean, motivating fitness environment.
+            </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-extrabold text-black shadow-glow transition hover:-translate-y-1 hover:bg-bone">
                 Join Now
@@ -258,6 +273,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section-pad">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            eyebrow="Local Fitness"
+            title="Top Fitness Center in Govind Nagar Nashik"
+            text="Rode Fitness Center Nashik serves members from Govind Nagar, Nashik Road, and nearby areas with 24-hour gym access, personal training, weight loss workouts, muscle gain coaching, Zumba, CrossFit, and recovery support."
+          />
+          <div className="mx-auto mt-8 max-w-4xl rounded-[2rem] border border-white/10 bg-white/6 p-6 text-center shadow-2xl backdrop-blur-xl sm:p-8">
+            <p className="text-sm leading-7 text-white/68 sm:text-base">
+              Rode Fitness Center Nashik is built for people who want a trusted fitness center in Nashik with clear coaching and premium equipment. Members choose Rode Fitness Center Nashik for weight loss gym programs, bodybuilding Nashik training, ladies batches, and CrossFit-style conditioning. Whether you search for Gym in Govind Nagar Nashik, best gym near me, Rode Fitness Centre, or Rode Fitness Center Nashik, our goal is to help you train consistently and feel confident from day one.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="programs" className="section-pad">
         <div className="mx-auto max-w-7xl">
           <SectionHeader eyebrow="Programs" title="Goal-specific training with measurable outcomes" text="Choose the path that fits your body, schedule, and confidence level. Every program is designed to feel structured from day one." />
@@ -279,7 +309,7 @@ export default function Home() {
       <section id="about" className="section-pad light-panel">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.25 }} className="relative overflow-hidden rounded-[2rem]">
-            <Image src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=1400&q=85" alt="Ladies fitness training" width={1100} height={900} className="h-[470px] w-full object-cover" />
+            <Image src="/rode-fitness-center.jpg" alt="Best Gym in Govind Nagar Nashik" width={1100} height={900} className="h-[470px] w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-white/15 bg-white/12 p-5 text-white backdrop-blur-xl">
               <p className="font-display text-3xl font-extrabold">Only Ladies Batch Available</p>
@@ -325,11 +355,11 @@ export default function Home() {
 
       <section id="trainers" className="section-pad light-panel">
         <div className="mx-auto max-w-7xl">
-          <SectionHeader light eyebrow="Trainers" title="Experience that makes the room trustworthy" text="20+ years of training experience, with coaching influence from Mr. Maharashtra and Mr. Western India athletes." />
+          <SectionHeader light eyebrow="Trainers" title="Experienced trainers at Rode Fitness Center Nashik" text="20+ years of training experience, with coaching influence from Mr. Maharashtra and Mr. Western India athletes." />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {trainers.map((trainer) => (
               <motion.article key={trainer.name} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="overflow-hidden rounded-[1.8rem] border border-black/10 bg-white/70 shadow-2xl">
-                <Image src={trainer.image} alt={trainer.name} width={900} height={1050} className="h-80 w-full object-cover grayscale-[0.08]" />
+                <Image src={trainer.image} alt={`${trainer.name} trainer at Rode Fitness Center Nashik`} width={900} height={1050} className="h-80 w-full object-cover grayscale-[0.08]" />
                 <div className="p-6">
                   <p className="font-display text-2xl font-extrabold text-charcoal">{trainer.name}</p>
                   <p className="mt-1 text-sm text-black/58">{trainer.role}</p>
@@ -345,8 +375,8 @@ export default function Home() {
           <SectionHeader eyebrow="Results" title="Transformation-focused, not random workouts" text="Clear targets, clean tracking, and coaching that keeps members moving toward visible progress." />
           <div className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]"><Image src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1000&q=85" alt="Before style fitness progress" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /><span className="absolute left-5 top-5 rounded-full bg-black/65 px-4 py-2 text-sm font-bold backdrop-blur-xl">Before</span></div>
-              <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]"><Image src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=85" alt="After style fitness progress" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /><span className="absolute left-5 top-5 rounded-full bg-gold px-4 py-2 text-sm font-extrabold text-black">After</span></div>
+              <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]"><Image src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1000&q=85" alt="Rode Fitness Center Nashik weight loss before transformation" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /><span className="absolute left-5 top-5 rounded-full bg-black/65 px-4 py-2 text-sm font-bold backdrop-blur-xl">Before</span></div>
+              <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]"><Image src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=85" alt="Best Gym in Govind Nagar Nashik after transformation result" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /><span className="absolute left-5 top-5 rounded-full bg-gold px-4 py-2 text-sm font-extrabold text-black">After</span></div>
             </div>
             <div className="grid content-center gap-4">
               <Counter end={500} suffix="+" label="Active members trained" />
@@ -359,7 +389,7 @@ export default function Home() {
 
       <section className="section-pad light-panel">
         <div className="mx-auto max-w-5xl text-center">
-          <SectionHeader light eyebrow="Testimonials" title="Members feel the difference quickly" text="A clean slider with real conversion-focused social proof." />
+          <SectionHeader light eyebrow="Reviews" title="Rode Fitness Center Nashik member reviews" text="Reviews with local search context help members find the right gym in Govind Nagar Nashik." />
           <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-[2rem] border border-black/10 bg-white/75 p-7 shadow-2xl sm:p-10">
             <div className="mb-5 flex justify-center gap-1 text-gold">{Array.from({ length: 5 }).map((_, i) => <Star key={i} fill="currentColor" size={18} />)}</div>
             <AnimatePresence mode="wait">
@@ -388,6 +418,30 @@ export default function Home() {
                   <ArrowRight size={17} />
                 </a>
               </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-pad">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader eyebrow="Fitness Guides" title="Local gym guides for Nashik members" text="Read helpful guides about weight loss, gym selection, and training at a fitness center in Govind Nagar Nashik." />
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {blogPosts.map((post) => (
+              <motion.a
+                key={post.href}
+                href={post.href}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                className="glass rounded-[1.8rem] p-6 transition hover:-translate-y-1 hover:border-gold/35 hover:shadow-glow"
+              >
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-gold">Blog</p>
+                <h3 className="mt-3 font-display text-3xl font-extrabold text-white">{post.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-white/62">{post.text}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-gold">Read guide <ArrowRight size={16} /></span>
+              </motion.a>
             ))}
           </div>
         </div>
@@ -436,8 +490,8 @@ export default function Home() {
       <footer className="border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.1fr_0.9fr_0.8fr]">
           <div className="flex gap-4">
-            <span className="relative h-14 w-14 overflow-hidden rounded-full bg-white"><Image src="/logo.png" alt="Rode Fitness Center logo" fill sizes="56px" className="object-contain p-1" /></span>
-            <div><p className="font-display text-xl font-extrabold">Rode Fitness Center</p><p className="mt-2 max-w-sm text-sm leading-6 text-white/55">Premium training, transformation programs, ladies batch, and recovery support.</p></div>
+            <span className="relative h-14 w-14 overflow-hidden rounded-full bg-white"><Image src="/logo.png" alt="Rode Fitness Center Nashik logo" fill sizes="56px" className="object-contain p-1" /></span>
+            <div><p className="font-display text-xl font-extrabold">Rode Fitness Center Nashik</p><p className="mt-2 max-w-sm text-sm leading-6 text-white/55">Premium gym in Govind Nagar Nashik for training, transformation programs, ladies batch, and recovery support.</p></div>
           </div>
           <div className="text-sm text-white/58"><p className="font-bold text-white">Contact</p><p className="mt-3">+91 9657882336</p><p className="mt-2">Radha Vasudev Batavia Nagar, Govind Nagar, Nashik</p></div>
           <div><p className="font-bold">Social</p><div className="mt-3 flex gap-3"><a href={whatsapp} target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/7"><MessageCircle size={18} /></a><a href="#trainers" className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/7"><Users size={18} /></a><a href="mailto:info@rodefitness.com" className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/7"><Mail size={18} /></a></div></div>
